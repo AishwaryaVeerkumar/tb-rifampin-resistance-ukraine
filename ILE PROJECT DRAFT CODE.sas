@@ -31,11 +31,12 @@ data UKAdults1_clean;
     end;
     
     /* Correct any issues with character variables that may cause misalignment */
-    array character_vars[*] $ _character_;
+ /*   array character_vars[*] $ _character_;
     do i = 1 to dim(character_vars);
         if character_vars[i] = 'NA' then character_vars[i] = ' ';
     end;
-    drop i;
+    drop i;*/
+   /*TEST LINE*/
 
     /* Additional data cleaning based on your observations */
 run;
